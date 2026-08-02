@@ -8,11 +8,38 @@ public class BoatStartStop : MonoBehaviour
 
     public AudioSource engine;  
     public AudioSource engineStop;
+
+    bool movingBeforePause = false;
+    bool paused = false;
     public void toggleBoat()
     {
-        if (boatMoving) {
+        if (!paused)
+        {
+            if (boatMoving)
+            {
+                stopBoat();
+            }
+            else
+            {
+                startBoat();
+                movingBeforePause = true;
+            }
+        }
+    }
+    public void forceStop()
+    {
+        if (boatMoving)
+        {
+            movingBeforePause = true;
             stopBoat();
-        } else {
+            paused = true;
+        }
+    }
+    public void forceStart()
+    {
+        paused = false;
+        if (!boatMoving && movingBeforePause)
+        {
             startBoat();
         }
     }
