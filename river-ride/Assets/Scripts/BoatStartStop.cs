@@ -58,4 +58,26 @@ public class BoatStartStop : MonoBehaviour
         splineAnimation.Pause();
         splineAnimation.MaxSpeed = 0f;
     }
+
+    public void slowSpeed(bool on)
+    {
+        if (on) {
+            startSpeed = 10f;
+            splineAnimation.MaxSpeed = startSpeed;
+        }
+    }
+    public void medSpeed(bool on)
+    {
+        if (on) {
+            startSpeed = 15f;
+            splineAnimation.MaxSpeed = startSpeed;
+        }
+    }
+    public void fastSpeed(bool on)
+    {
+        if (on) {
+            startSpeed = 20f;
+            splineAnimation.MaxSpeed = startSpeed;
+        }
+    }
 }
