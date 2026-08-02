@@ -8307,6 +8307,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5738818398444278858, guid: 9e490e347b306724d8c373938da8ec5e, type: 3}
   m_PrefabInstance: {fileID: 922564455}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926378024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6080728135488091009, guid: 87ec8e4efe262104281ea5827bc04be7, type: 3}
+  m_PrefabInstance: {fileID: 1914604637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &934516818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19534,6 +19539,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 738019291}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6080728135488091009, guid: 87ec8e4efe262104281ea5827bc04be7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914604639}
     - targetCorrespondingSourceObject: {fileID: 5278578877037113842, guid: 87ec8e4efe262104281ea5827bc04be7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1640443370}
@@ -19546,6 +19554,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6316740937759947653, guid: 87ec8e4efe262104281ea5827bc04be7, type: 3}
   m_PrefabInstance: {fileID: 1914604637}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914604639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926378024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8d337e8bc7ac4498e0df29e7b8bd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnButtonPress
+  action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d18cbed2-5f35-4f46-8f8c-5d016972cec4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: b39b9638-7dd7-48b9-8443-c3510b0c4036
+      m_Path: <XRController>{RightHand}/secondaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    m_Flags: 0
+  OnPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 148515489}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1917459285
 PrefabInstance:
   m_ObjectHideFlags: 0
