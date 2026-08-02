@@ -76,4 +76,14 @@ public class Floater : MonoBehaviour
         return wave + WaterLevel;
     }
 
+    public void BoatBobbing(bool on)
+    {
+        if (on) {
+            Speed = 1.2f;
+        }
+        else {
+            Speed = 0.0f;
+        }
+    }
+
 }
